@@ -46,7 +46,7 @@ h1{
 .btn{
   border: 2px solid #fff;
   border-radius: 20px;
-  background-color: rgb(71, 203, 255);
+  background-color: rgb(74, 217, 148);
   color: #000;
   font-family: 'Indie Flower', cursive;
   padding: 10px;
@@ -54,17 +54,20 @@ h1{
   text-transform: uppercase;
   cursor: pointer;
   transition: .5s ease all;
+  position: absolute;
+  bottom: 110px;
 }
 
 .btn:hover{
-  background-color: rgb(128, 213, 249);
+  background-color: rgb(34, 127, 82);
+  color: #fff;
   transform: scale(1.1);
 }
 
 .author__container{
   position: absolute;
   right: 0;
-  top: 61%;
+  top: 65%;
   background-color: #fff;
   width: auto;
   padding: 3px;
@@ -73,7 +76,7 @@ h1{
 
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,5 +106,49 @@ footer img{
   }
   100%{
     transform: scale(1.1);
+  }
+}
+
+/*====== Media Queries ========*/
+@media only screen and (min-width: 590px) {
+  .App{
+    background-position: center;
+  }
+  .paper{
+    width: 380px;
+    height: 250px;
+  }
+  .paper p {
+    font-size: 18px;
+  }
+  .author__container{
+    position: absolute;
+    right: 120px;
+    top: 70%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 922px) {
+  h1{
+    font-size: 40px;
+  }
+  .paper{
+    width: 500px;
+    height: 300px;
+  }
+  .paper p {
+    font-size: 20px;
+  }
+  .author__container{
+    position: absolute;
+    right: 30%;
+    top: 70%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  footer {
+    bottom: 0px;
   }
 }
