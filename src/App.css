@@ -1,0 +1,107 @@
+
+.App{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: left;
+  position: relative;
+}
+
+h1{
+  font-family: 'Rubik Iso', cursive;
+  text-align: center;
+  background-color: #ffffffb9;
+  padding: 5px;
+  backdrop-filter: blur(2px);
+  border-radius: 24px;
+  font-size: 25px;
+}
+
+.paper{
+  background-image: url('/paper.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 310px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  color: gray;
+  text-align: center;
+}
+
+.paper p {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn{
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background-color: rgb(71, 203, 255);
+  color: #000;
+  font-family: 'Indie Flower', cursive;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+.btn:hover{
+  background-color: rgb(128, 213, 249);
+  transform: scale(1.1);
+}
+
+.author__container{
+  position: absolute;
+  right: 0;
+  top: 61%;
+  background-color: #fff;
+  width: auto;
+  padding: 3px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+}
+
+footer img{
+  width: 25px;
+  animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation: logo 2s linear infinite;
+}
+
+@keyframes logo {
+  0%{
+    transform: scale(1);
+  }
+  20%{
+    transform: scale(0.9);
+  }
+  40%{
+    transform: scale(0.8);
+  }
+  80%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
